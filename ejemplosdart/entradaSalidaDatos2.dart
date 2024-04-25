@@ -1,5 +1,6 @@
 void main(){
     print(ejemplo 02 - entrada/salida datos);
+    print("object")
     //DEFINICION variables
     int num1, num2, suma;
     //ENTRADA algoritmo
