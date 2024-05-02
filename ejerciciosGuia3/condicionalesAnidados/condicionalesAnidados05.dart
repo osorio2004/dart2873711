@@ -16,14 +16,13 @@ Determinar cuanto pagara una persona que compre manzanas es esa frutería sabien
   double kilosComprados, totalSinDescuento, descuento, precioFinal;
   double precioKilo = 1300;
 
-  // Entrada de datos
+  //ENTRADA
   print("Ingrese la cantidad de kilos de manzanas comprados:");
   kilosComprados = double.parse(stdin.readLineSync()!);
 
   // PROCESO
   totalSinDescuento = kilosComprados * precioKilo;
 
- 
   if (kilosComprados <= 2) {
     descuento = 0;
   } else if (kilosComprados <= 5) {
@@ -33,7 +32,6 @@ Determinar cuanto pagara una persona que compre manzanas es esa frutería sabien
   } else {
     descuento = totalSinDescuento * 0.20;
   }
-
   precioFinal = totalSinDescuento - descuento;
 
   // SALIDA
