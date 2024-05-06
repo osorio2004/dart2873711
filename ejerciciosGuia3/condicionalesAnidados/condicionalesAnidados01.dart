@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS
+  //JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS 1
   /* 
   Desarrollar un algoritmo que Dado tres números calcule el mayor 
   */

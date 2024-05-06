@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //JUAN ANDRES OSORIO - EJE CONDICIONAL DOBLE
+  //JUAN ANDRES OSORIO - EJE CONDICIONAL DOBLE 1
   /*
   Desarrollar un algoritmo que lea dos números y los imprima en forma ascendente.
   */

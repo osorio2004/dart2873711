@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS
+//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS 7
 /*
 Leer 2 números; si son iguales que los multiplique, si el primero es mayor que el segundo que los
 reste y si no que los sume.

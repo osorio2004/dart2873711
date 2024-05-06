@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES
+  //JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES 1
   /*
   La  empresa  comercializadora  Solvavende escobas,  recogedores  y  aromatizantes,   clasifica  a  sus clientes de acuerdo a la frecuencia de compras con las condiciones siguientes:
   Si el cliente es de la categoría 1 se le descuenta el 5% 

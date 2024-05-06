@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //JUAN ANDRES OSORIO - EJE CONDICIONAL DOBLE
+  //JUAN ANDRES OSORIO - EJE CONDICIONAL DOBLE 6
   /*
   El  gobierno  colombiano  desea  reforestar  un  bosque  que  mide  determinado  número  de  hectáreas.  Si  la superficie del terreno excede a 1 millón de metros cuadrados, entonces decidirá sembrar de la sig. manera:
   Si la superficie del terreno es menor o igual a un millón de metros cuadrados, entonces decidirá sembrar de la sig. manera:
@@ -14,11 +14,19 @@ void main(){
   print("ingrese la superficie");
   superficie = double.parse(stdin.readLineSync()!);
 
-  superficie = hectareas * 10000;
-  superficie = 0;
   if(superficie > 1000000){
-    cant_pinos = superficie * 0.70;
-
+    cant_pinos = (superficie / 10) * 8;
+    cant_robles = (superficie / 15) * 15;
+    cant_cedros = (superficie / 18) * 10;
+  } else {
+    // Sembrar árboles para superficie igual o menor a 1 millón de metros cuadrados
+    cant_pinos = (superficie / 10) * 5;
+    cant_robles = (superficie / 15) * 3;
+    cant_cedros = (superficie / 18) * 2;
   }
 
+  // Imprimir resultados
+  print('Número de pinos a sembrar: $cant_pinos');
+  print('Número de robles a sembrar: $cant_robles');
+  print('Número de cedros a sembrar: $cant_cedros');
 }

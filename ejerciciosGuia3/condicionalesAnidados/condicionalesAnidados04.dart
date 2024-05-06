@@ -1,6 +1,6 @@
 import 'dart:io';
 void main() {
-//JUAN ANDRES OSORIO - EJE CONDICIONALES ANIDADOS
+//JUAN ANDRES OSORIO - EJE CONDICIONALES ANIDADOS 4
 /*
 En un montallantas se ha establecido una promoción de las llantas marca “Ponchadas”, dicha
 promoción consiste en lo siguiente:

@@ -1,6 +1,6 @@
 import 'dart:io';
   void main() {
-  //JUAN ANDRES OSORIO - EJE CONDICIONAL DOBLE
+  //JUAN ANDRES OSORIO - EJE CONDICIONAL DOBLE 2
   /*
   Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig. manera:
   •Si trabaja 40 horas o menos se le paga $16 por hora

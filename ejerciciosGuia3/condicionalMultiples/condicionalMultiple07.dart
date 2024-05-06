@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-//JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES
+//JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES 7
 /*
 El costo de las llamadas internacionales depende de la zona geográfica en la que se encuentre el país destino, y del número de minutos hablados.En la siguiente tabla se presenta el costo por minuto por zona. A cada uno se le ha asociado una clave.  Construya  la  solución  para  calcular  e  imprimir  el  costo  de  una  llamada  dada  la  clave  y  la duración de la llamada..
 */

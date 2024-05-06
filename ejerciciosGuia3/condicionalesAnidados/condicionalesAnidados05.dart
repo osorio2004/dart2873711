@@ -1,6 +1,6 @@
 import 'dart:io';
 void main(List<String> args){
-//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS
+//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS 5
 /* 
 Una frutería ofrece las manzanas con descuento según la siguiente tabla:
 

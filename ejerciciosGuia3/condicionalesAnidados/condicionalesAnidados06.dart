@@ -1,6 +1,6 @@
 import 'dart:io';
 void main(){
-//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS
+//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS 6
 /*
 El dueño de una empresa desea planificar las decisiones financieras que tomara en el Siguiente año.
 La manera de planificarlas depende de lo siguiente:

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS
+  //JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS 2
   /*
   Dado el monto de una compra calcular el descuento considerado:
   Descuento es 20% si el monto es mayor a 20000 pesos. Descuento es 10% si el monto es mayor a 10000 pesos y 

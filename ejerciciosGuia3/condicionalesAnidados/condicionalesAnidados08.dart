@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS
+//JUAN ANDRES OSORIO - EJE CONDICIONAL ANIDADOS 8
 /*
 El jefe del departamento de construcción de la constructora Pagasa, desea que se le desarrolle un program
 para sus empleados, el cual calcule el sueldo de un empleado, de tal manera que el sueldo se calculará de
@@ -11,6 +11,38 @@ exceden a 50 hrs. el excedente de 50 hrs. se paga al triple de la cuota por hora
 del empleado, el número de horas trabajadas y la cuota por hora. mostrar en pantalla el nombre del empleado,
 el número de horas trabajadas y su sueldo
 */
-//Declaración de variables 
+  String nombreEmpleado;
+  int horasTrabajadas;
+  double cuotaPorHora,sueldo, sueldoExtra,sueldoTotal;
 
+  // ENTRADA
+  print("Ingrese el nombre del empleado:");
+  nombreEmpleado = stdin.readLineSync()!;
+
+  print("Ingrese el número de horas trabajadas:");
+  horasTrabajadas = int.parse(stdin.readLineSync()!);
+
+  print("Ingrese la cuota por hora:");
+  cuotaPorHora = double.parse(stdin.readLineSync()!);
+
+  // PROCESO
+  if (horasTrabajadas <= 40) {
+    sueldo= horasTrabajadas * cuotaPorHora;
+    sueldoExtra = 0; //Se paga cuota normal por hora
+
+  } else if (horasTrabajadas <= 50) {
+    sueldo = horasTrabajadas * cuotaPorHora;
+    sueldoExtra= (horasTrabajadas - 40) * (2 * cuotaPorHora);
+
+  } else {
+    sueldo = horasTrabajadas * cuotaPorHora; 
+    sueldoExtra = (horasTrabajadas - 50) * (3 * cuotaPorHora);
+  }
+
+  sueldoTotal = sueldo + sueldoExtra + sueldoExtra;
+
+  // SALIDA
+  print("Nombre del empleado: $nombreEmpleado");
+  print("Horas trabajadas: $horasTrabajadas");
+  print("Sueldo total: $sueldoTotal");
 }

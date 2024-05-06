@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  //JUAN ANDRES OSORIO GOMEZ - EJE CONDICIONAL ANIDADOS
+  //JUAN ANDRES OSORIO GOMEZ - EJE CONDICIONAL ANIDADOS 3
   /*
   En una fábrica de computadoras se planea ofrecer a los clientes un descuento que dependera del
   número de computadoras que compre. Si las computadoras son menos de cinco se les dará un 10% de descuento 

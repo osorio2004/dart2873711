@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-//JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES
+//JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES 6
 /*
 Desarrollar un algoritmo que lea el nombre del mes y el año e imprima en pantalla cuantos días tiene. Es necesario tener en cuenta si es año bisiesto o no.
 */

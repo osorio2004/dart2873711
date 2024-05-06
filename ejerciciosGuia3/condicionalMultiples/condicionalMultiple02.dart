@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES
+  //JUAN ANDRES OSORIO - EJE CONDICIONALES MULTIPLES 2
   /*
   Una compañía de fumigación utiliza aviones para fumigar las cosechas contra una gran variedad de plagas. Las cantidades que la compañía cobra a los granjeros depende de qué es lo que se desea fumigar y del número de hectáreas que se desea fumigar, de acuerdo con la siguiente distribución :
   
@@ -20,17 +20,45 @@ void main(){
   */
 
   String? nombre;
-  int tipoFumigacion;
-  double fhierbas, fMoscasMosquitos, fGusanos, contraTodo;
-  double hectareas, descuento;
+  double pagototal, descuento, tipofumigacion, cantHectareas, costoinicial;
 
-  //ENTRADA
   print("ingrese su nombre");
   nombre = stdin.readLineSync();
-  print("cual es el tipo de fumigacion que necesita?");
-  tipoFumigacion = int.parse(stdin.readLineSync()!);
+  print("ingrese 1 para (fumigacion contra malas hierbas) 2 para (Fumigación contra moscas y mosquitos) 3 para (Fumigación contra gusanos) 4 para (Fumigación contra todo lo anterior)");
+  tipofumigacion = double.parse(stdin.readLineSync()!);
+  print("ingrese la cantidad de hectareas que va fumigar");
+  cantHectareas = double.parse(stdin.readLineSync()!);
 
-  switch(tipoFumigacion){
+  descuento = 0;
+  costoinicial = 0;
+  pagototal = costoinicial * cantHectareas;
+
+  switch (tipofumigacion) {
     case 1:
+      pagototal = 50000 * cantHectareas;
+      break;
+    case 2:
+      pagototal = 70000 * cantHectareas;
+      break;
+    case 3:
+      pagototal = 80000 * cantHectareas;
+      break;
+    case 4:
+      pagototal = 190000 * cantHectareas;
+      break;
+    default:
+    pagototal=0;
+      print("tipo de fumigacion invalido");
+      break;
   }
+  if (cantHectareas > 100) {
+    pagototal = pagototal * 0.95;
+  }
+  if (pagototal > 1000000) {
+    descuento = (pagototal - 1000000) * 0.1;
+    pagototal = pagototal - descuento;
+  }
+
+  print("el nombre del granjero es: $nombre");
+  print("el pago total es: $pagototal");
 }
