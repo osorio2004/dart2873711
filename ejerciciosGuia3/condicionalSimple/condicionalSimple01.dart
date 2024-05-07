@@ -23,5 +23,5 @@ void main(List<String> args){
         print("se obtuvo un incentivo de : $incentivo");
     }
     //SALIDA alg
-    print("el sueldo neto es : $sueldo");
+    print("su nombre es $el sueldo neto es : $sueldo");
 }
