@@ -10,7 +10,7 @@ void main(){
   print("cuantas notas va a ingresar?");
   n_notas = int.parse(stdin.readLineSync()!);
   for(int i=0; i<n_notas; i++){
-  print("cuantas notas va a ingresar?"+(i+1).toString());
+  print("ingrese la nota"+(i+1).toString());
     notas =double.parse(stdin.readLineSync()!);
     suma += notas;
   }
