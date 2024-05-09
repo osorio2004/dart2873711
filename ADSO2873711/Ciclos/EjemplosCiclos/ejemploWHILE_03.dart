@@ -4,17 +4,22 @@ void main(){
   /* 
   desarrollar un algoritmo que lea n numeros positivos, determine y muestre el promedio de los n numeros positivos
   */
-  int num, n, contador = 0;
-  double promedio, suma;
-
-  while(num != 0){
-    print("ingrese un numero (cero para salir)");
+  int num, cantNumeros, contador = 0, suma = 0;
+  double promedio;
+  
+  print("digite la cantidad de numeros");
+  cantNumeros = int.parse(stdin.readLineSync()!);
+  
+  while(contador < cantNumeros){
+    print("digite un numero positivo");
     num = int.parse(stdin.readLineSync()!);
-    if(contador > 0){
-      print("el numero es positivo $contador");
+    if(num > 0){
+      suma = suma + num;
       contador++;
     }else{
-      print("el numero es negativo");
+      print("el numero digitado no es positivo");
     }
   }
+  promedio = suma / cantNumeros;
+  print("el promedio es: $promedio");
 }
