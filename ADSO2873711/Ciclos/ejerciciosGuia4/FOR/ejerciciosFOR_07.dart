@@ -8,12 +8,13 @@ Al cerrar un expendio de naranjas, 15 clientes recibirán un 15% de descuento si
   // Variables para almacenar totales
   double totalPagado = 0;
   double totalDescuento = 0;
+  double kilos;
 
   // Procesar a cada cliente (15 clientes)
   for (int cliente = 1; cliente <= 15; cliente++) {
     // Leer la cantidad de kilos comprados
     print("Cliente $cliente: Ingrese la cantidad de kilos comprados: ");
-    double kilos = double.parse(stdin.readLineSync()!);
+    kilos  = double.parse(stdin.readLineSync()!);
 
     // Calcular el precio por kilo
     double precioKilo = 2.50; // Precio por kilo (asumiendo un valor fijo)

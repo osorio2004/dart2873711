@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'dart:io';
 
 void main(){
@@ -8,18 +7,28 @@ void main(){
   */
   int numVendedores;
   int contador=0;
-  int ventas = 0;
-  double sueldoBase;
-  double comisiones = 0;
+  double sueldoBase, sueldoTotal, precioVenta;
+  double comisiones = 0, porcentajeComision = 0;
 
-  print("ingrese el numero de vendedores");
+  //ENTRADA 
+  print ("Ingrese numero de vendedores"); 
   numVendedores = int.parse(stdin.readLineSync()!);
-  
-  while(contador < numVendedores){
-    contador++;
-    print("vendedor $contador");
-    while (ventas < 3){
-      
-    }
+
+  //PROCESO 
+  while ( contador < numVendedores ) {             
+      print ("Ingrese su sueldo base"); 
+      sueldoBase = double.parse(stdin.readLineSync()!);
+      contador ++;
+
+      for (int i = 0; i < numVendedores; i++) {     
+        print ("Digite el valor de su venta " +(i+1).toString());
+        precioVenta = double.parse(stdin.readLineSync()!);
+        porcentajeComision = precioVenta * 0.10;
+      }
+
+      comisiones= porcentajeComision * 3;
+      sueldoTotal = sueldoBase + comisiones; 
+      print("Su sueldo base es de: $sueldoBase");
+      print("Y su sueldo mas comisiones es: $sueldoTotal");
   }
 }

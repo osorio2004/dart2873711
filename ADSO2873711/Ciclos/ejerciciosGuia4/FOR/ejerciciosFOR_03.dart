@@ -9,23 +9,24 @@ Leer 20 números e imprimir cuantos son positivos, cuantos negativos y cuantos c
   int positivos = 0;
   int negativos = 0;
   int ceros = 0;
+  int cantNumeros = 20;
+  double numero;
 
-  // Bucle for para leer 20 números
-  for (int i = 0; i < 20; i++) {
-    // Leer un número del usuario
-    int numero = int.parse(stdin.readLineSync()!);
+  for (int i = 0; i < cantNumeros; i++) {
+    print("ingrese un numero");
+    numero = double.parse(stdin.readLineSync()!);
 
-    // Determinar si el número es positivo, negativo o cero
     if (numero > 0) {
-      positivos++;
+      print("el numero es positivo");
+      positivos++; // para contar en 2 en 2   =+ 2
     } else if (numero < 0) {
+      print("el numero es negativo");
       negativos++;
     } else {
+      print("el numero es 0");
       ceros++;
     }
   }
-
-  // Imprimir la cantidad de números positivos, negativos y ceros
   print("Números positivos: $positivos");
   print("Números negativos: $negativos");
   print("Números ceros: $ceros");
