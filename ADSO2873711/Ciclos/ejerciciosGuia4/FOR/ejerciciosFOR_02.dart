@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //JUAN ANDRES OSORIO EJE FOR 01
+  //JUAN ANDRES OSORIO EJE FOR 02
   /*
   Leer 10 números e imprimir solamente los números positivos
   */
