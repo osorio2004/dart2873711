@@ -1,6 +1,17 @@
 void main(List<String> args) {
+  //JUAN ANDRES OSORIO EJERCICIO DO-WHILE 05
   /*
-  Un censador recopila ciertos datos aplicando encuestas para el último Censo Nacional de Población y Vivienda. Desea obtener de todas las personas que alcance a encuestar en un día, que porcentaje tiene  estudios  de  primaria,  secundaria,  carrera  técnica,  estudios  profesionales  y  estudios  de posgrado.El programa debe preguntar si se desea continuar ingresando datos.
+  Calcular la suma siguiente:100 + 98 + 96 + 94 + . . . + 0 en este orden
   */
-  
+  int contador = 100;      
+  int suma = 0;          
+
+  // PROCESO DE SUMA
+  while (contador >= 0) {
+    suma += contador;
+    contador -= 2;
+  }
+
+  // RESULTADO FINAL
+  print("El resultado total de la suma desde 100 hasta 0, restando dos en dos, es: $suma");
 }

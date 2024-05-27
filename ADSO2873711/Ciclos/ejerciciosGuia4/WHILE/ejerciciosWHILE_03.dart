@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //JUAN ANDRES OSORIO EJE FOR 01
+  //JUAN ANDRES OSORIO EJERCICIO WHILE 03
   /*
   Determinar  cuantos  hombres  y  cuantas  mujeres  se  encuentran  en  un  grupo  de  n  personas, suponiendo que los datos son extraídos alumno por alumno.
   */
@@ -16,14 +16,15 @@ void main(List<String> args) {
   while(contador < cantAlumnos){
     print("cual es su genero");
     genero = stdin.readLineSync();
-    }if(genero!.toUpperCase() == "H"){
+    contador++;
+    if(genero!.toUpperCase() == "H"){
       contadorHombres++;
     }else if(genero.toUpperCase() == "M"){
       contadorMujeres++;
     }else{
       print("su genero no es valido vuelva a ingresarlo");
-    }
-  contador++;
+    } 
+  } 
   numHombres = contadorHombres;
   numMujeres = contadorMujeres;
   print("hay $numMujeres mujeres en el salon");

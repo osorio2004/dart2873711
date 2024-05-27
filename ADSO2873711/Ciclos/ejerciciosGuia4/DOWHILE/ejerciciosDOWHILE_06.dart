@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
+  //JUAN ANDRES OSORIO EJERCICIO DO-WHILE 06
   /*
   Leer por cada alumno de Diseño estructurado de algoritmos su número de control y su calificación en cada una de las 5 unidades de la materia. Al final que escriba el número de control del alumno que obtuvo mayor promedio. Suponga que los alumnos tienen diferentes promedios.
   */
@@ -32,5 +33,5 @@ void main(List<String> args) {
     contador++;
   } while (contador < cantEstudiantes);
   print("el promedio mayor es de $poromedioM");
-  print("el numero de el mejor estudiantes es $numControl");
+  print("el numero de el mejor estudiantes es #$numControl");
 }

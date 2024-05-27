@@ -6,12 +6,12 @@ void main(List<String> args) {
 Al cerrar un expendio de naranjas, 15 clientes recibirán un 15% de descuento si compran más de 10 kilos. Determinar cuánto pagará cada cliente y cuanto percibirá la tienda por esas compras.
 */
   // Variables para almacenar totales
+  int cantClientes = 15;
   double totalPagado = 0;
   double totalDescuento = 0;
   double kilos;
 
-  // Procesar a cada cliente (15 clientes)
-  for (int cliente = 1; cliente <= 15; cliente++) {
+  for (int cliente = 1; cliente <= cantClientes; cliente++) {
     // Leer la cantidad de kilos comprados
     print("Cliente $cliente: Ingrese la cantidad de kilos comprados: ");
     kilos  = double.parse(stdin.readLineSync()!);

@@ -1,39 +1,35 @@
 import 'dart:io';
 
 void main(List<String> args) {
+  //JUAN ANDRES OSORIO EJERCICIO WHILE 07
   /*
   calcular el promedio de edades
-   */
-  //DEFINICION
-  double promedio, promedioHombres, promedioMujeres;
-  int cantAlumnos, contadorHombres=0, contadorMujeres=0;
-  int contador=0, edad, sumaMujeres=0, sumaHombres=0;
-  int sumaTotal;
-  String? genero;
+  */
 
-  print("cual es la cantidad de alumnos");
-  cantAlumnos = int.parse(stdin.readLineSync()!);
-  while(contador < cantAlumnos){
-    //controlador ALUMNOS
-    print("cual es su genero y edad");
-    genero = stdin.readLineSync();
-    edad = int.parse(stdin.readLineSync()!);
-    if(genero!.toUpperCase() == "H"){
-      sumaHombres += edad;
-      contadorHombres++;
-    }else if(genero.toUpperCase() == "M"){
-      sumaMujeres += edad;
-      contadorMujeres++;
-    }else{
-      print("genero no valido");
-    }
-  contador++;
+  int n;
+  double menor;
+  int contador = 0;
+
+  print('Ingrese la cantidad:');
+  n = int.parse(stdin.readLineSync()!);
+
+  if (n <= 0) {
+    print('El número de elementos debe ser mayor que cero.');
+    return;
   }
-  sumaTotal = sumaMujeres + sumaHombres;
-  promedio = sumaTotal / cantAlumnos;
-  promedioMujeres = sumaMujeres / contadorMujeres;
-  promedioHombres = sumaHombres / contadorHombres;
-  print("el promedio de edades del grupo es: $promedio");
-  print("el promedio de mujeres en el grupo es: $promedioMujeres");
-  print("el promedio de hombres en el grupo es: $promedioHombres");
+
+  print('Ingrese el 1er numero:');
+  menor = double.parse(stdin.readLineSync()!);
+  contador++;
+
+  while (contador < n) {
+    print('Ingrese el número ${contador + 1}:');
+    double numero = double.parse(stdin.readLineSync()!);
+    
+    if (numero < menor) {
+      menor = numero;
+    }
+    contador++;
+  }
+  print('El menor valor del conjunto es: $menor');
 }
