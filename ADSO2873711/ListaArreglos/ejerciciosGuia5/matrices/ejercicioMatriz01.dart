@@ -3,7 +3,7 @@ import 'dart:io';
 
 void main(List<String> args) {
   List<List<double>> matriz = [];
-  double numero, suma = 0;
+  double suma = 0;
   int cantFilas = 2, cantColumnas = 3;
 
   for(int i=0; i<cantFilas; i++){
