@@ -4,6 +4,7 @@ import 'vehiculo.dart';
 
 void main(List<String> args) {
   int cantInteracciones = 1;
+  String lugar;
   String colorUsuario;
   int velocidadUsuario;
   double tamanioUsuario;
@@ -34,6 +35,5 @@ void main(List<String> args) {
     print("ingrese el lugar donde se estacionara el auto");
     lugar = stdin.readLineSync()!;
     listaVehiculos[i].estacionar(lugar);
-    print("el auto se estaciono en $lugar");
   }
 }
