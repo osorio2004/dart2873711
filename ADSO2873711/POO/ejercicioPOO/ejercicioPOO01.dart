@@ -3,14 +3,32 @@ import 'empleado.dart';
 
 void main() {
 List<Empleado> empleados = [];
-String respuesta;
 String nombre;
 int edad;
 double salario;
 String puesto;
 String tipoContrato;
-String nuevoPuesto;
  
+Empleado emp1 = new Empleado("pepito", 20, 200000, "gerente", "planta");
+int newEdad = emp1.cumplirAnios();
+print("la nueva edad es $newEdad");
+newEdad=emp1.cumplirAnios();
+print("un feliz cumple, su edad es: $newEdad");
+/***********************/
+emp1.cumplirAnios2();
+emp1.cumplirAnios2();
+String newPuesto = emp1.cambiarPuesto("secretario");
+print("el nuevo puesto es $newPuesto");
+emp1.mostrarInformacion();
+
+print("cantidad de entradas");
+cantidadEntradas = int.parse(stdin.readLineSync()!);
+for (var i = 0; i < cantidadEntradas; i++) {
+  print("ingrese el nombre del empleado ${i+1}");
+  nombreUsuario = stidin.readLineSync()!;
+}
+
+/*
 while (true) {
   print("¿Desea agregar un empleado? (si/no)");
   respuesta = stdin.readLineSync()!;
@@ -46,4 +64,5 @@ print("*"*50);
     print("Bonificación calculada: $bonificacion");
     primerEmpleado.mostrarInformacion();
   }
+  */
 }

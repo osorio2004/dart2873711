@@ -5,37 +5,56 @@ class Empleado {
   String puesto;
   String tipoContrato;
 
+  //constructor
   Empleado(this.nombre, this.edad, this.salario, this.puesto, this.tipoContrato);
 
+  //metodo aumenta el salario
   void aumentarSalario(double porcentaje) {
     salario += salario * (porcentaje / 100);
     print("Salario aumentado. Nuevo salario: $salario");
   }
 
-  void cumplirAnios() {
+  int cumplirAnios(){
+    this.edad++;
+    return this.edad;
+  }
+  void cumplirAnios2() {
     edad++;
     print("$nombre cumple años. Nueva edad: $edad");
   }
 
   void cambiarPuesto(String nuevoPuesto) {
-    puesto = nuevoPuesto;
-    print("Nuevo puesto de $nombre: $puesto");
+    this.puesto = nuevoPuesto;
+    return this.puesto;
   }
 
   void mostrarInformacion() {
-    print("Nombre: $nombre, Edad: $edad, Salario: $salario, Puesto: $puesto, Tipo de Contrato: $tipoContrato");
+    print("""
+      nombre: $nombre.
+      edad: $edad.
+      salario: $salario.
+      puesto: $puesto.
+      tipo contrato: $tipoContrato.
+   """);
   }
 
   double calcularBonificacion() {
-    switch (tipoContrato) {
+    double bonificacion;
+    switch (this.tipoContrato.toLowerCase()) {
       case "Contratista":
-        return salario * 0.10;
+        bonificacion = salario * 0.10;
+        break;
       case "Temporal":
-        return salario * 0.05;
+        bonificacion = salario * 0.05;
+        break;
       case "Indefinido":
-        return salario * 0.15;
+        bonificacion = salario * 0.15;
+        break;
       default:
-        return 0;
+        bonificacion = 0;
+        break;
     }
+    this.salario += bonificacion;
+    return this.salario;
   }
 }

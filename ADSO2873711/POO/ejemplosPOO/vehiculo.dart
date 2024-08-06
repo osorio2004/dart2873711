@@ -1,10 +1,33 @@
 class Vehiculo{
-    String color;
-    int velocidad;
-    double tamanio;
+      String color;
+      int velocidad;
+      double tamanio;
 
-    //constructor class vehiculo
-    Vehiculo(this.color, this.velocidad, this.tamanio);
+  //constructor class vehiculo
+  Vehiculo(this.color, this.velocidad, this.tamanio);
+
+  //metodos SET y GET
+  //setea o asigna a un nuevo valor para el atributo color
+  void setColor(String newColor){
+    this.color = newColor;
+  }
+  void setVelocidad(String newVelocidad){
+    this.color = newVelocidad;
+  }
+  void setTamanio(String newTamanio){
+    this.color = newTamanio;
+  }
+
+ //permite obtener el valor del atributo color
+ String getColor(){
+  return this.color;
+ }
+ String geVelocidad(){
+  return this.velocidad;
+ }
+ String getTamanio(){
+  return this.tamanio;
+ }
 
   //metodo avanzar
   void avanzar(int velAvanz){
