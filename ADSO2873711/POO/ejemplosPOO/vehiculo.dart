@@ -22,10 +22,10 @@ class Vehiculo{
  String getColor(){
   return this.color;
  }
- String geVelocidad(){
+ int geVelocidad(){
   return this.velocidad;
  }
- String getTamanio(){
+ double getTamanio(){
   return this.tamanio;
  }
 
