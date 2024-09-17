@@ -1,34 +1,22 @@
-class Persona {
-
+class Persona{
   String _nombre;
   int _edad;
 
   Persona(this._nombre, this._edad);
 
-  //Este metodo hace algo, por lo tanto se pone 'void'
-  void setNombre(String nombre) { //Aca se modifica el nombre
-    _nombre = nombre;
+  void setNombre(String nombreUsuario){
+    _nombre = nombreUsuario;
   }
 
-  //Se pone el tipo de dato que devuelve
-  String getNombre() { //Aqui se obtiene el nombre 
+  String getNombre(){
     return _nombre;
   }
 
-  void setEdad(int edad) { //Aqui se modifica la edad
-    _edad = edad;
+  void setEdad(int edadUsuario){
+    _edad = edadUsuario;
   }
 
-  int getEdad() { //Aqui se obtienen la edad 
+  int getEdad(){
     return _edad;
   }
-
-  void mostrarInfo() {
-    print("""
-    El nombre es: $_nombre
-    La edad es: $_edad
-    """);
-  }
-
-
 }
