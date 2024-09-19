@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'Futbolista.dart';
 import 'Persona.dart';
+import 'Futbolista.dart';
 import 'Programador.dart';
 
 void main(List<String> args) {
@@ -14,6 +14,7 @@ void main(List<String> args) {
   print("Ingresa la edad de la persona");
   int edad = int.parse(stdin.readLineSync()!);
   Persona persona1 = Persona(nombre, edad);
+
   print("Se ha creado la persona con los siguientes datos:");
   print("nombre: ${persona1.getNombre()}");
   print("Edad: ${persona1.getEdad()}");

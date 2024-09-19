@@ -7,7 +7,7 @@ class Persona{
   void setNombre(String nombreUsuario){
     _nombre = nombreUsuario;
   }
-
+  
   String getNombre(){
     return _nombre;
   }

@@ -4,7 +4,7 @@ class Futbolista extends Persona{
   String _equipo;
   String _posicion;
   int cantidadGoles;
-
+  
   Futbolista(this._equipo, this._posicion, this.cantidadGoles, nombre, edad):super(nombre, edad);
 
   void setEquipo(String equipo){
